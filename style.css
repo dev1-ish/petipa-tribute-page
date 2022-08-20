@@ -1,14 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap');
 
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #eee;
 }
 
 h1 {
     font-size: 40px;
     margin: 5px auto;
-    text-align: center;
 
+}
+
+.img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
 }
 
 #image {
@@ -16,9 +35,33 @@ h1 {
     display: block;
     height: auto;
     margin: 0 auto;
+    align-self: center;
 }
 
 #img-caption {
     font-style: italic;
     display: block;
+    margin: 15px 0 5px 0;
+}
+
+#headline {
+    margin: 30px 0;
+}
+
+main p:not(.desc) {
+    text-indent: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    color: rgb(49, 49, 49);
+}
+
+a:hover {
+    color: dimgray;
+}
+
+a:visited {
+    color: darkslategray;
 }
